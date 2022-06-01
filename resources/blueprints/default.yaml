@@ -1,0 +1,38 @@
+title: Default
+fields:
+  - handle: server_configs
+    field:
+      collapse: false
+      sets:
+        new_set:
+          display: "New Set"
+          fields:
+            - handle: server_type
+              field:
+                input_type: text
+                antlers: false
+                display: "Server Type"
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            - handle: vendor_logos
+              field:
+                mode: list
+                container: assets
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                display: "Vendor Logos"
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                read_only: false
+      display: "Server Configs"
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      read_only: false
